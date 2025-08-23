@@ -3,46 +3,61 @@ using namespace std;
 
 int main() {
     /*
-        Em alguns programas, há momentos em que um mesmo bloco de código
-        deve ser rodado determinadas vezes, para isso usamos estruturas 
-        de repetição. Nessas estruturas, são utilizados contadores que 
-        precisam de incrementação ou decrementação
-    
-        ex: 
-
-        enquanto um inteiro i igual a zero for menor que 10, i será igual
-        a ele mesmo somado com uma unidade
-
-        em c++
-
-        for (int i = 0; i < 10; i++) {
-            //código que será repetido até i não ser menor que 10 
-        }
-
-        mas isso será explorado futuramente!
+        Incrementação e Decrementação
+        -----------------------------
+        Usamos para alterar o valor de variáveis em +1 ou -1.
+        Muito comum em estruturas de repetição (for, while).
     */
-
 
     int i = 0;
     int c = 10;
 
-    //  ENCREMENTAÇÃO
+    // INCREMENTAÇÃO
 
-    // forma tradicional:  
+    cout << "Valor inicial de c: " << c << endl;
+
+    // forma tradicional
     c = c + 1;
+    cout << "Depois de c = c + 1: " << c << endl;
 
-    // alternativa compacta: 
-    c += 1; //adicionou um a variável c (somar um número com ele mesmo e qualquer outro)
-    c++; //também adicionou um a variável c (quando deseja somar ele mesmo SOMENTE com um)
+    // forma compacta
+    c += 1;
+    cout << "Depois de c += 1: " << c << endl;
 
-    //  DECREMENTAÇÃO
+    c++;
+    cout << "Depois de c++ (pos-fixo): " << c << endl;
 
-    // forma tradicional: 
+    ++c;
+    cout << "Depois de ++c (prefixo): " << c << endl;
+
+    cout << "-----------------------------" << endl;
+
+    // DECREMENTAÇÃO
+
+    cout << "Valor inicial de i: " << i << endl;
+
+    // forma tradicional
     i = i - 1;
+    cout << "Depois de i = i - 1: " << i << endl;
 
-    // forma compacta:
-    i -= 1; // i é igual a ele mesmo menos uma unidade
-    i--; // i é reduzido em uma unidade
+    // forma compacta
+    i -= 1;
+    cout << "Depois de i -= 1: " << i << endl;
+
+    i--;
+    cout << "Depois de i-- (pos-fixo): " << i << endl;
+
+    --i;
+    cout << "Depois de --i (prefixo): " << i << endl;
+
+    cout << "-----------------------------" << endl;
+
+    // DIFERENÇA ENTRE PREFIXO E PÓS-FIXO
+    int x = 5;
+    cout << "x inicial: " << x << endl;
+    cout << "Resultado de ++x: " << ++x << " (incrementa antes de usar)" << endl;
+    cout << "Resultado de x++: " << x++ << " (usa antes, incrementa depois)" << endl;
+    cout << "Valor final de x: " << x << endl;
 
     return 0;
 }
