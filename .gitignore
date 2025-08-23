@@ -1,0 +1,31 @@
+# ------------------------
+# Compilados / Executáveis
+# ------------------------
+# Ignora todos os arquivos dentro de 01-fundamentos,
+# exceto os arquivos fonte .cpp
+01-fundamentos/**/*
+!01-fundamentos/**/*.cpp
+
+# ------------------------
+# Configurações do VSCode
+# ------------------------
+.vscode/
+
+# ------------------------
+# Arquivos de build comuns
+# ------------------------
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+
+# ------------------------
+# Logs e temporários
+# ------------------------
+*.log
+*.tmp
+*.swp
+*~
