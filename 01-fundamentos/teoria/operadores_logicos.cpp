@@ -22,5 +22,23 @@ int main() {
     cout << ((a + b == 30) && (a - b <= 10)) << endl; 
     // (a+b == 30) E (a-b <= 10) → ambas verdadeiras → true
 
+    cout << endl << endl;
+
+    // Usando bool
+    bool x = true;
+    bool y = false;
+
+    // Usando '||' (OU): só é falso se as duas proposições forem falsas
+    cout << (x || y) << endl; // true || false → true
+    cout << (x || x) << endl; // true || true  → true
+    cout << (y || x) << endl; // false || true → true
+    cout << (y || y) << endl; // false || false → false
+
+    // Usando '&&' (E): só é verdadeiro se ambas forem verdadeiras
+    cout << (x && y) << endl; // true && false → false
+    cout << (x && x) << endl; // true && true  → true
+    cout << (y && x) << endl; // false && true → false
+    cout << (y && y) << endl; // false && false → false
+
     return 0;
 }
