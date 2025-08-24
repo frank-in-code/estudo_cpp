@@ -1,16 +1,9 @@
-# Arquivos de compilação
-*.o
-*.obj
-*.exe
-*.out
+# Ignorar todos os executáveis gerados
+01-fundamentos/exercicio/*
+01-fundamentos/teoria/*
 
-# Diretórios de build
-/build/
-/bin/
-/dist/
+# Mas manter os .cpp
+!*.cpp
 
 # Arquivos do VSCode
 .vscode/
-
-# Outros temporários
-*.log
