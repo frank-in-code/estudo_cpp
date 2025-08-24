@@ -9,12 +9,13 @@ int main()
     double delta;
     double x1, x2;
 
-    cout << "-----------------------" << endl;
-    cout << "Equação do segundo grau" << endl;
-    cout << "-----------------------" << endl;
+    cout << "---------------------------" << endl;
+    cout << "* Equação do segundo grau *" << endl;
+    cout << "---------------------------" << endl;
 
     cout << "formato: ax² + bx + c = 0" << endl;
     cout << "lembre-se: a não pode ser 0" << endl;
+    cout << "---------------------------" << endl;
 
     cout << "a = ";
     cin >> a;
@@ -40,6 +41,10 @@ int main()
 
     delta = b*b-4*a*c;
 
+    cout << "---------------------------" << endl;
+
+    cout << "Equação dada: (" << a << ")x² + (" << b << ")x + (" << c << ") = 0" << endl; 
+
     cout << "Delta = " << delta << " (b² - 4ac)" << endl;
 
     if (delta > 0)
@@ -54,7 +59,8 @@ int main()
         cout << "x = " << fixed << setprecision(3) << x1 << endl;
     } else 
     {
-        cout << "Com delta negativo não há raízes reais" << endl;
+        cout << "Com delta negativo não há raízes reais!" << endl;
+        cout << "Fim do programa..." << endl;
         return 0;
     }
 
